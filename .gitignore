@@ -34,7 +34,6 @@ captures/
 
 # Intellij
 *.iml
-.idea
 /local.properties
 /gradle.properties
 /.idea/workspace.xml
@@ -46,3 +45,6 @@ captures/
 /build
 /captures
 .externalNativeBuild
+
+.gradle
+.idea
