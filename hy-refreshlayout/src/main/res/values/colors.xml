@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用的线条 -->
+    <color name="common_line">#FFE2E0DB</color>
+</resources>
