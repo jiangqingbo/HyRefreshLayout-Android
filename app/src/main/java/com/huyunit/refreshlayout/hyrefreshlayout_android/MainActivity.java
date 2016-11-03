@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.huyunit.refreshlayout.hyrefreshlayout_android.fragment.MainFragment;
+import com.huyunit.refreshlayout.hyrefreshlayout_android.fragment.SlideShowHideScrollViewFragment;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.fragment.SwipeRefreshListLayoutFragment;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.fragment.SwipeRefreshRecyclerLayoutFragment;
 
@@ -101,8 +102,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             replaceFragment(SwipeRefreshRecyclerLayoutFragment.newInstance());
         } else if (id == R.id.nav_listview) {
             replaceFragment(SwipeRefreshListLayoutFragment.newInstance());
-        } else if (id == R.id.nav_slideshow) {
-
+        } else if (id == R.id.nav_slideshowhidescrollview) {
+            replaceFragment(SlideShowHideScrollViewFragment.newInstance());
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
