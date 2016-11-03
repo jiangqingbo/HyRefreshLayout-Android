@@ -3,8 +3,24 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
+    <!-- 使用本项目中的类 -->
+    <!--<com.huyunit.refreshlayout.hyrefreshlayout_android.view.MyScrollView-->
+        <!--android:id="@+id/scroller"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
 
-    <com.huyunit.refreshlayout.hyrefreshlayout_android.view.MyScrollView
+        <!--<com.huyunit.refreshlayout.hyrefreshlayout_android.view.MyTextView-->
+            <!--android:id="@+id/tv_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="@string/scrollview_text"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="16sp" />-->
+
+    <!--</com.huyunit.refreshlayout.hyrefreshlayout_android.view.MyScrollView>-->
+
+    <!-- 使用类库中的类 -->
+    <com.huyunit.refreshlayout.SlideHideScrollView
         android:id="@+id/scroller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,7 +33,7 @@
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
-    </com.huyunit.refreshlayout.hyrefreshlayout_android.view.MyScrollView>
+    </com.huyunit.refreshlayout.SlideHideScrollView>
 
 
     <FrameLayout
@@ -62,7 +78,7 @@
     <ImageView
         android:id="@+id/img_tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_gravity="bottom"
         android:scaleType="fitXY"
         android:src="@drawable/footer" />

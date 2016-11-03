@@ -1,5 +1,6 @@
 package com.huyunit.refreshlayout.hyrefreshlayout_android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -104,6 +105,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             replaceFragment(SwipeRefreshListLayoutFragment.newInstance());
         } else if (id == R.id.nav_slideshowhidescrollview) {
             replaceFragment(SlideShowHideScrollViewFragment.newInstance());
+        } else if (id == R.id.nav_slidehidescrollview_activity) {
+            startActivity(new Intent(MainActivity.this, SlideHideScrollViewActivity.class));
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
