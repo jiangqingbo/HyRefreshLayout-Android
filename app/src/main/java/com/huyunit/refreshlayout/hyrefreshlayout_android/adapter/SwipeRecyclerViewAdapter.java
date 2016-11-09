@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.huyunit.refreshlayout.RecyclerViewAdapter;
+import com.huyunit.refreshlayout.adapter.RecyclerViewAdapter;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.R;
 
 import java.util.List;

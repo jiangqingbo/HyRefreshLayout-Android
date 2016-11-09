@@ -5,9 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.huyunit.refreshlayout.adapter.BaseListAdapter;
+import com.huyunit.refreshlayout.adapter.ViewHolder;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.R;
-import com.huyunit.refreshlayout.hyrefreshlayout_android.adapter.base.BaseListAdapter;
-import com.huyunit.refreshlayout.hyrefreshlayout_android.adapter.base.ViewHolder;
 
 import java.util.List;
 

@@ -10,7 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.widget.Toast;
 
-import com.huyunit.refreshlayout.RecyclerViewAdapter;
+import com.huyunit.refreshlayout.adapter.RecyclerViewAdapter;
 import com.huyunit.refreshlayout.SwipeRefreshRecyclerLayout;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.R;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.adapter.SwipeRecyclerViewAdapter;

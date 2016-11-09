@@ -1,4 +1,4 @@
-package com.huyunit.refreshlayout;
+package com.huyunit.refreshlayout.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.huyunit.refreshlayout.R;
 
 import java.util.List;
 

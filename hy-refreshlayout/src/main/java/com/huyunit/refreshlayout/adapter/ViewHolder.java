@@ -1,4 +1,4 @@
-package com.huyunit.refreshlayout.hyrefreshlayout_android.adapter.base;
+package com.huyunit.refreshlayout.adapter;
 
 import android.util.SparseArray;
 import android.view.View;
@@ -6,10 +6,11 @@ import android.view.View;
 /**
  * 万能的viewHolder
  * author: bobo
- * create time: 2016/10/19 18:42
+ * create time: 2016/11/08 14:35
  * Email: jqbo84@163.com
  */
 public class ViewHolder {
+    @SuppressWarnings("unchecked")
     public static <T extends View> T get(View view, int id) {
         SparseArray<View> viewHolder = (SparseArray<View>) view.getTag();
         if (viewHolder == null) {
@@ -23,4 +24,5 @@ public class ViewHolder {
         }
         return (T) childView;
     }
+
 }
