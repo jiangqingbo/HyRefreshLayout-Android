@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.huyunit.refreshlayout.adapter.RecyclerViewAdapter;
+import com.huyunit.refreshlayout.adapter.BaseRefreshRecyclerViewAdapter;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.R;
 
 import java.util.List;
@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
  * create time: 2016/10/18 19:30
  * Email: jqbo84@163.com
  */
-public class SwipeRecyclerViewAdapter extends RecyclerViewAdapter<String> {
+public class SwipeRecyclerViewAdapter extends BaseRefreshRecyclerViewAdapter<String> {
 
     public SwipeRecyclerViewAdapter(Context context, List<String> datas) {
         super(context, datas);

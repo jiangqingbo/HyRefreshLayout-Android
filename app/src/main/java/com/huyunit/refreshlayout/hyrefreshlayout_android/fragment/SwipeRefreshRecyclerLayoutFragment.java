@@ -10,7 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.widget.Toast;
 
-import com.huyunit.refreshlayout.adapter.RecyclerViewAdapter;
+import com.huyunit.refreshlayout.adapter.BaseRefreshRecyclerViewAdapter;
 import com.huyunit.refreshlayout.SwipeRefreshRecyclerLayout;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.R;
 import com.huyunit.refreshlayout.hyrefreshlayout_android.adapter.SwipeRecyclerViewAdapter;
@@ -99,7 +99,7 @@ public class SwipeRefreshRecyclerLayoutFragment extends BaseFragment implements 
     @Override
     public void onLoadMore() {
         //设置正在加载更多
-        swipeRecyclerViewAdapter.changeMoreStatus(RecyclerViewAdapter.MoreStatusEnum.LOADING_MORE);
+        swipeRecyclerViewAdapter.changeMoreStatus(BaseRefreshRecyclerViewAdapter.MoreStatusEnum.LOADING_MORE);
         //改为网络请求
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -113,7 +113,7 @@ public class SwipeRefreshRecyclerLayoutFragment extends BaseFragment implements 
                 }
                 swipeRecyclerViewAdapter.AddFooterItem(footerDatas);
                 //设置回到上拉加载更多
-                swipeRecyclerViewAdapter.changeMoreStatus(RecyclerViewAdapter.MoreStatusEnum.PULLUP_LOAD_MORE);
+                swipeRecyclerViewAdapter.changeMoreStatus(BaseRefreshRecyclerViewAdapter.MoreStatusEnum.PULLUP_LOAD_MORE);
                 //没有加载更多了
                 //mRefreshAdapter.changeMoreStatus(mRefreshAdapter.NO_LOAD_MORE);
                 Toast.makeText(getContext(), "更新了 "+footerDatas.size()+" 条目数据", Toast.LENGTH_SHORT).show();

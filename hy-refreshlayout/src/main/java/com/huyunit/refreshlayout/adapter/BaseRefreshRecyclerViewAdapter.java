@@ -18,7 +18,7 @@ import java.util.List;
  * create time: 2016/10/18 16:35
  * Email: jqbo84@163.com
  */
-public abstract class RecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public abstract class BaseRefreshRecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context mContext;
     private LayoutInflater mInflater;
     private List<T> mDatas;
@@ -35,7 +35,7 @@ public abstract class RecyclerViewAdapter<T> extends RecyclerView.Adapter<Recycl
     //上拉加载更多状态-默认为0
     private MoreStatusEnum mLoadMoreStatus = MoreStatusEnum.PULLUP_LOAD_MORE;
 
-    public RecyclerViewAdapter(Context context, List<T> datas) {
+    public BaseRefreshRecyclerViewAdapter(Context context, List<T> datas) {
         this.mContext = context;
         this.mInflater = LayoutInflater.from(context);
         this.mDatas = datas;
