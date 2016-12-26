@@ -3,7 +3,7 @@
 
 #### 引用包
 
-    gradle： compile 'com.huyunit:hy-refreshlayout:1.0.1'
+    gradle： compile 'com.huyunit:hy-refreshlayout:1.0.3'
 
 ----
 #### 2016.11.03:  添加自定义上滑动隐藏（SlideHideScrollView控件）ToolBar、FooterView的功能
