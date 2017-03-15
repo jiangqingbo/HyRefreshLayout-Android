@@ -158,6 +158,10 @@ public abstract class BaseRefreshRecyclerViewAdapter<T> extends RecyclerView.Ada
         return mDatas;
     }
 
+    public void setLoadMoreStatus(MoreStatusEnum mLoadMoreStatus) {
+        this.mLoadMoreStatus = mLoadMoreStatus;
+    }
+
     public MoreStatusEnum getLoadMoreStatus() {
         return mLoadMoreStatus;
     }
